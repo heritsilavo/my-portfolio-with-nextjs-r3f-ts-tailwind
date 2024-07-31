@@ -24,17 +24,6 @@ export function MonLogo(props) {
     const [hovered, hover] = useState(false)
     useCursor(hovered)
 
-    useFrame(function (state, delta) {
-        //console.log(nodes);
-    })
-
-    // useFrame((state, delta) => {
-    //     const t = state.clock.getElapsedTime()
-    //     state.setFrameloop("always")
-    //     meshRef.current.rotation.y = 0
-    //     meshRef.current.rotation.x = 1.3
-    //     meshRef.current.rotation.z -= (0.01)
-    // })
 
     return <mesh
         ref={meshRef}

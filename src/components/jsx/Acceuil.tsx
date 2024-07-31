@@ -43,7 +43,7 @@ const Accueil = () => {
         <h1 style={{ fontSize: ((windowWidth && windowWidth < 1300) ? ((windowWidth <= 970 && windowWidth >= 768) ? "50px" : "60px") : "72px") }} className="mt-2 mb-0">Je suis Tsilavo</h1>
         <h1 style={{ fontSize: ((windowWidth && windowWidth < 1300) ? ((windowWidth <= 970 && windowWidth >= 768) ? "25px" : "30px") : "40px") }} className="mt-2 mb-0">Développeur web fullstack</h1>
         <h1 style={{ fontSize: ((windowWidth && windowWidth < 1300) ? ((windowWidth <= 970 && windowWidth >= 768) ? "15px" : "20px") : "24px") }} className="mt-4 mb-0">"Construisons votre avenir numérique ligne par ligne"</h1>
-        <a href="/Heritsilavo ANDRIANTSILAVINA.pdf" className='mt-4 mb-0 btn btn-success' download>Télécharger CV </a>
+        <a href="/Heritsilavo ANDRIANTSILAVINA.pdf" className='mt-5 mb-0 p-2 rounded bg-green-700' download>Télécharger CV </a>
       </div>
 
       {/* Petit Ecran */}
@@ -52,14 +52,14 @@ const Accueil = () => {
         <h1 style={{ fontSize: "45px" }} className="mt-2 mb-0">Je suis Tsilavo</h1>
         <h1 style={{ fontSize: "23px" }} className="mt-2 mb-0">Développeur web fullstack</h1>
         <h1 style={{ fontSize: "15px" }} className="mt-4 mb-0">"Construisons votre avenir numérique ligne par ligne"</h1>
-        <a href="/Heritsilavo ANDRIANTSILAVINA.pdf" className='shadow-lg mt-4 mb-0 btn btn-success' download>Télécharger CV </a>
+        <a href="/Heritsilavo ANDRIANTSILAVINA.pdf" className='mt-6 mb-0 p-2 rounded bg-green-700' download>Télécharger CV </a>
       </div>
 
       {/* Logo HT */}
       <div className={`w-full relative md:w-5/12 ` + ((windowWidth && windowWidth < 1300) ? ' h-1/2 ' : ' h-3/4 ')}>
         <View orbitControls={<OrbitControls enableZoom={false} />} className='h-full w-full flex flex-col items-center justify-center'>
           <Suspense fallback={null}>
-            {/* <MonLogo></MonLogo> */}
+            <MonLogo></MonLogo>
             <Common color={"#12092D"}></Common>
           </Suspense>
         </View>

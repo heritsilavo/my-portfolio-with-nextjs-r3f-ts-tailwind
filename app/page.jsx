@@ -14,8 +14,8 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <NavBar></NavBar>
       <Accueil></Accueil>
-      <APropos></APropos>
       {/* 
       <Project></Project>
       <Competences></Competences>
